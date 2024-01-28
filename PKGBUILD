@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: AGPL-3.0
+#
 # Maintainer: Felix Yan <felixonmars@archlinux.org>
 
 pkgname=python-validate-pyproject
@@ -38,3 +40,5 @@ package() {
   cd validate-pyproject
   python -m installer --destdir="$pkgdir" dist/*.whl
 }
+
+# vim:set sw=2 sts=-1 et:
